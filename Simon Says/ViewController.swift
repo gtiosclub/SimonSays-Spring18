@@ -79,16 +79,9 @@ class ViewController: UIViewController {
     func animateButton(buttonTag: Int, completionHandler: @escaping () -> ()) {
         let button = buttons[buttonTag]
         UIView.animate(withDuration: colorHighlightTime, animations: {
-            button?.alpha = 0.6
-            button?.layer.shadowColor = button?.backgroundColor?.cgColor
-            button?.layer.shadowRadius = 12.0
-            button?.layer.shadowOpacity = 1.0
-            button?.layer.shadowOffset = CGSize.zero
+            button?.alpha = 0.5
         }, completion: { finished in
             button?.alpha = 1.0
-            button?.layer.shadowColor = UIColor.clear.cgColor
-            button?.layer.shadowRadius = 0.0
-            button?.layer.shadowOpacity = 0.0
             completionHandler()
         })
     }
