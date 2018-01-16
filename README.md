@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img src="screenshot.png" width=350px>
+  <img src="screenshot.png" width=450px>
 </p>
 
 ### Challenges
